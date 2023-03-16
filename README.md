@@ -1,5 +1,11 @@
-# expense-tracker-backend
-The backend for my expense tracker application, will have public API's for integrators to take use of
+# Expense tracker backend
 
-# Design & Architecture
-Will add diagrams and images to explain system.
+## API
+
+## Architecture
+
+## Installation
+
+## Testing
+
+
