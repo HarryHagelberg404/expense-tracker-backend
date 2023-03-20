@@ -1,6 +1,7 @@
 import express, { Request, Response, NextFunction } from 'express';
 import Logger from './core/Logger';
 import cors from 'cors';
+import compression from 'compression'
 import { corsUrl, environment } from './config';
 import './database'; // initialize database
 import './cache'; // initialize cache
@@ -17,6 +18,9 @@ process.on('uncaughtException', (e) => {
 });
 
 const app = express();
+
+// Compress all responses
+app.use(compression())
 
 app.use(express.json({ limit: '10mb' }));
 app.use(
